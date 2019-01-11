@@ -1,10 +1,18 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+
 
 import { AppComponent } from './app.component';
 import { ListEmployeesComponent } from './employees/list-employees.component';
 import { CreateEmployeeComponent } from './employees/create-employee.component';
 
+// define routes
+const appRoutes: Routes = [
+{ path : 'list', component : ListEmployeesComponent },
+{ path : 'create', component : CreateEmployeeComponent},
+{ path : '', redirectTo : '/list', pathMatch : 'full'}
+];
 
 @NgModule({
   declarations: [
@@ -13,7 +21,8 @@ import { CreateEmployeeComponent } from './employees/create-employee.component';
     CreateEmployeeComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
