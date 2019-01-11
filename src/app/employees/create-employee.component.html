@@ -1,3 +1,22 @@
-<p>
-  create-employee works!
-</p>
+<form #employeeForm="ngForm">
+<div class="panel panel-primary" *ngFor="let employee of employees">
+    <div class="panel-heading">
+      <h3 class="panel-title">Create Employee</h3>
+    </div>
+    <div class="panel-body">
+      <div class="form-group">
+        <label for="fullName">Full name</label>
+        <input id="fullName" text="text" class="form-control">
+      </div>
+      <div class="form-group">
+          <label for="email">Email</label>
+          <input id="fullName" text="text" class="form-control">
+        </div>
+
+        <div class="panel-footer">
+           <button type="submit" class="btn btn-primary ">Save</button>
+          </div>
+</div>
+</div>
+</form>
+{{employee.form}}
