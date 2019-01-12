@@ -1,3 +1,11 @@
+import {
+  ValidatorFn,
+  Validator,
+  AbstractControl,
+  FormControl,
+  NG_VALIDATORS,
+  NgForm,
+} from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -12,4 +20,7 @@ export class CreateEmployeeComponent implements OnInit {
   ngOnInit() {
   }
 
+  saveEmployee(empForm: NgForm): void {
+    console.log(empForm);
+  }
 }
