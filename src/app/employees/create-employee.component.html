@@ -17,27 +17,36 @@
         </div>
 
         <div class="form-group">
+            <label for="email">Telephone</label>
+            <input id="phoneNumber" name="phoneNumber" [ngModel]="" type="text" class="form-control">
+
+          </div>
+
+
+        <div class="form-group">
           <label>Gender</label>
           <div class="form-control">
-            <!--label male-->
+
             <label class="radio-inline">
-             <input type="radio" value="male">
+            <!--radiobutton male-->
+             <input type="radio" value="male" name="gender">
              Male
           </label>
 
-             <!--label female-->
              <label class="radio-inline">
-              <input type="radio" value="female">
+               <!--radiobutton female-->
+              <input type="radio" value="female" name="gender">
               Female
             </label>
           </div>
         </div><!--end form group-->
 
         <div class="panel-footer">
+          <!--button save-->
            <button type="submit" class="btn btn-primary ">Save</button>
           </div>
 </div>
-</div>
+</div><!--end panel class-->
 </form>
 
 Angular generated Form Model : {{employeeForm.value}}
