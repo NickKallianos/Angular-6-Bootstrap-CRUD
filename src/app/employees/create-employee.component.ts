@@ -13,8 +13,9 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './create-employee.component.html',
   styleUrls: ['./create-employee.component.css']
 })
+// checked radiobutton by default
 export class CreateEmployeeComponent implements OnInit {
-
+gender = 'male';
   constructor() { }
 
   ngOnInit() {

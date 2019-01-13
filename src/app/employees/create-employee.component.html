@@ -26,17 +26,15 @@
         <div class="form-group">
           <label>Gender</label>
           <div class="form-control">
-
             <label class="radio-inline">
-            <!--radiobutton male-->
-             <input type="radio" value="male" name="gender">
-             Male
-          </label>
+            <!--radiobutton male, prechecked-->
+             <input type="radio" value="male" name="gender"
 
+             [(ngModel)]="gender" checked>Male
+          </label>
              <label class="radio-inline">
                <!--radiobutton female-->
-              <input type="radio" value="female" name="gender">
-              Female
+              <input type="radio" value="female" name="gender">Female
             </label>
           </div>
         </div><!--end form group-->
