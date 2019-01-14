@@ -19,7 +19,6 @@
         <div class="form-group">
             <label for="email">Telephone</label>
             <input id="phoneNumber" name="phoneNumber" [ngModel]="" type="text" class="form-control">
-
           </div>
 
         <div class="form-group">
@@ -38,12 +37,26 @@
           </div>
         </div><!--end form group-->
 
+        <div class="form group">
+            <label class="checkbox-inline">Department</label>
+          <select id="department" name="department" name="isActive" [ngModel]="" class="form control">
+            <option value="1">Help Desk</option>
+            <option value="1">HR</option>
+            <option value="1">IT</option>
+            <option value="1">Payroll</option>
+
+          </select>
+          </div>
+        </div>
+
+
         <div class="panel-footer">
           <!--button save-->
            <button type="submit" class="btn btn-primary ">Save</button>
           </div>
-</div>
+
 </div><!--end panel class-->
+
 </form>
 
 Angular generated Form Model : {{employeeForm.value}}
